@@ -43,6 +43,7 @@
   "devDependencies": {
     "@craco/craco": "^7.0.0",
     "@craco/types": "^7.0.0",
+    "@types/testing-library__jest-dom": "^5.14.5",
     "craco-swc": "^0.5.1"
   }
 }
