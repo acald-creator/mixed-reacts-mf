@@ -1,6 +1,17 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import { AppProps } from 'next/app'
+import dynamic from 'next/dynamic'
 
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+const App = dynamic(
+  async() => {
+    return import('../async-pages/_app')
+  },
+  {
+    ssr: false,
+  }
+)
+
+function MyApp(props: AppProps) {
+  return <App {...props} />
 }
+
+export default MyApp
