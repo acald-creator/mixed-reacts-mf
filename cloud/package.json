@@ -3,16 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@stitches/react": "^1.2.8",
     "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.14",
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-scripts": "5.0.1",
+    "serve": "^14.2.0",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
@@ -20,6 +17,8 @@
     "start": "PORT=8082 craco start",
     "build": "craco build",
     "test": "craco test",
+    "serve": "serve build -p 8082",
+    "clean": "rm -rf build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -43,6 +42,12 @@
   "devDependencies": {
     "@craco/craco": "^7.0.0",
     "@craco/types": "^7.0.0",
+    "@testing-library/dom": "v7",
+    "@testing-library/react": "^12.1.5",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.14",
+    "@types/react": "^17.0.53",
+    "@types/react-dom": "^17.0.19",
     "@types/testing-library__jest-dom": "^5.14.5",
     "craco-swc": "^0.5.1"
   }
