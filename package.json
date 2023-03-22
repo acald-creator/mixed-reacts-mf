@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"lerna run start --scope remote\" \"lerna run dev --scope dashboard\"",
+    "dev": "concurrently \"lerna run start --scope remote\" \"lerna run start --scope cloud\" \"lerna run dev --scope dashboard\"",
     "build": "lerna run build",
-    "serve": "concurrently \"lerna run serve --scope remote\" \"lerna run start --scope dashboard\""
+    "serve": "concurrently \"lerna run serve --scope remote\" \"lerna run serve --scope cloud\" \"lerna run start --scope dashboard\""
   },
   "keywords": [],
   "author": "",
